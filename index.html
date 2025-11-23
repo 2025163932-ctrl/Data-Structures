@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Interactive Data Structures Visualizer</h1>
+    <p>Explore Stacks, Queues, Linked Lists, Trees, and Graphs — all in one page.</p>
+</header>
+
+<!-- ================= STACK ================= -->
+<section id="stack">
+    <h2>Stack (LIFO)</h2>
+    <div class="controls">
+        <input id="stackInput" placeholder="Value">
+        <button onclick="pushStack()">Push</button>
+        <button onclick="popStack()">Pop</button>
+    </div>
+    <div id="stackView" class="visual"></div>
+</section>
+
+<!-- ================= QUEUE ================= -->
+<section id="queue">
+    <h2>Queue (FIFO)</h2>
+    <div class="controls">
+        <input id="queueInput" placeholder="Value">
+        <button onclick="enqueue()">Enqueue</button>
+        <button onclick="dequeue()">Dequeue</button>
+    </div>
+    <div id="queueView" class="visual"></div>
+</section>
+
+<!-- ================= LINKED LIST ================= -->
+<section id="linkedlist">
+    <h2>Linked List</h2>
+    <div class="controls">
+        <input id="listInput" placeholder="Value">
+        <button onclick="addNode()">Add Node</button>
+        <button onclick="removeNode()">Remove Node</button>
+    </div>
+    <div id="listView" class="visual"></div>
+</section>
+
+<!-- ================= BINARY SEARCH TREE ================= -->
+<section id="bst">
+    <h2>Binary Search Tree</h2>
+    <div class="controls">
+        <input id="bstInput" placeholder="Value">
+        <button onclick="insertBST()">Insert</button>
+    </div>
+    <div id="bstView" class="visual tree"></div>
+</section>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
