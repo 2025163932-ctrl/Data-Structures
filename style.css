@@ -12,66 +12,61 @@ header {
     color: white;
 }
 
-h1 {
-    font-size: 2rem;
+.subtitle {
+    color: crimson;
 }
 
-section {
-    padding: 40px 20px;
-    border-bottom: 1px solid #ddd;
+.section {
+    margin: 60px auto;
+    width: 80%;
 }
 
 h2 {
+    color: crimson;
     border-left: 5px solid crimson;
     padding-left: 10px;
 }
 
-.controls {
-    margin: 20px 0;
+.visualizer {
+    margin: 25px 0;
+    padding: 20px;
+    border: 2px solid #111;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
 }
 
-.controls input {
-    padding: 8px;
-    margin-right: 5px;
+.array-box, .stack-box, .queue-box {
+    display: flex;
+    gap: 10px;
 }
 
-.controls button {
-    padding: 8px 14px;
+.box {
+    padding: 15px 20px;
+    border-radius: 8px;
     background: crimson;
+    color: white;
+    font-weight: bold;
+}
+
+.controls {
+    margin-top: 15px;
+}
+
+input {
+    padding: 10px;
+    width: 150px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #111;
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 4px;
+    margin-left: 5px;
 }
 
-.controls button:hover {
-    opacity: 0.85;
-}
-
-.visual {
-    border: 1px solid #ccc;
-    min-height: 120px;
-    padding: 20px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.node {
-    padding: 10px 15px;
-    border: 2px solid crimson;
-    border-radius: 6px;
-}
-
-.arrow {
-    font-size: 24px;
-    align-self: center;
-}
-
-.tree {
-    min-height: 200px;
-}
-
-.graph {
-    min-height: 200px;
+button:hover {
+    background: crimson;
 }

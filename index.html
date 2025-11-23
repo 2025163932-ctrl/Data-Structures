@@ -3,61 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Structures Visualizer</title>
+    <title>Data Structures Interactive</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Interactive Data Structures Visualizer</h1>
-    <p>Explore Stacks, Queues, Linked Lists, Trees </p>
-</header>
+    <header>
+        <h1>Data Structures Interactive</h1>
+        <p class="subtitle">Arrays • Stacks • Queues</p>
+    </header>
 
-<!-- ================= STACK ================= -->
-<section id="stack">
-    <h2>Stack (LIFO)</h2>
-    <div class="controls">
-        <input id="stackInput" placeholder="Value">
-        <button onclick="pushStack()">Push</button>
-        <button onclick="popStack()">Pop</button>
-    </div>
-    <div id="stackView" class="visual"></div>
-</section>
+    <!-- ARRAYS SECTION -->
+    <section class="section">
+        <h2>Arrays</h2>
+        <p>
+            An <strong>array</strong> is a fixed-size, ordered collection of elements stored in 
+            contiguous memory locations. Each element can be accessed by its index, 
+            starting from 0.
+        </p>
 
-<!-- ================= QUEUE ================= -->
-<section id="queue">
-    <h2>Queue (FIFO)</h2>
-    <div class="controls">
-        <input id="queueInput" placeholder="Value">
-        <button onclick="enqueue()">Enqueue</button>
-        <button onclick="dequeue()">Dequeue</button>
-    </div>
-    <div id="queueView" class="visual"></div>
-</section>
+        <div class="visualizer">
+            <div id="array-container" class="array-box"></div>
+        </div>
 
-<!-- ================= LINKED LIST ================= -->
-<section id="linkedlist">
-    <h2>Linked List</h2>
-    <div class="controls">
-        <input id="listInput" placeholder="Value">
-        <button onclick="addNode()">Add Node</button>
-        <button onclick="removeNode()">Remove Node</button>
-    </div>
-    <div id="listView" class="visual"></div>
-</section>
+        <div class="controls">
+            <input type="number" id="array-value" placeholder="Value" />
+            <button onclick="addToArray()">Add</button>
+            <button onclick="removeFromArray()">Remove Last</button>
+        </div>
+    </section>
 
-<!-- ================= BINARY SEARCH TREE ================= -->
-<section id="bst">
-    <h2>Binary Search Tree</h2>
-    <div class="controls">
-        <input id="bstInput" placeholder="Value">
-        <button onclick="insertBST()">Insert</button>
-    </div>
-    <div id="bstView" class="visual tree"></div>
-</section>
+    <!-- STACK SECTION -->
+    <section class="section">
+        <h2>Stack</h2>
+        <p>
+            A <strong>stack</strong> follows the LIFO principle (Last In, First Out).
+            The last item pushed onto the stack is the first one to be popped.
+        </p>
 
+        <div class="visualizer">
+            <div id="stack-container" class="stack-box"></div>
+        </div>
 
+        <div class="controls">
+            <input type="number" id="stack-value" placeholder="Value" />
+            <button onclick="pushStack()">Push</button>
+            <button onclick="popStack()">Pop</button>
+        </div>
+    </section>
 
-<script src="script.js"></script>
+    <!-- QUEUE SECTION -->
+    <section class="section">
+        <h2>Queue</h2>
+        <p>
+            A <strong>queue</strong> follows the FIFO principle (First In, First Out).  
+            The first item added is the first one removed.
+        </p>
+
+        <div class="visualizer">
+            <div id="queue-container" class="queue-box"></div>
+        </div>
+
+        <div class="controls">
+            <input type="number" id="queue-value" placeholder="Value" />
+            <button onclick="enqueue()">Enqueue</button>
+            <button onclick="dequeue()">Dequeue</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
