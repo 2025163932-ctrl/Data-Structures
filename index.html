@@ -29,7 +29,7 @@
         <div class="controls">
             <input type="number" id="array-value" placeholder="Value" />
             <button onclick="addToArray()">Add</button>
-            <button onclick="removeFromArray()">Remove Last</button>
+            <button onclick="removeFromArray()">Remove</button>
         </div>
     </section>
 
@@ -38,7 +38,8 @@
         <h2>Stack</h2>
         <p>
             A <strong>stack</strong> follows the LIFO principle (Last In, First Out).
-            The last item pushed onto the stack is the first one to be popped.
+            The last item pushed onto the stack is the first one to be popped. Think of it like a stack of books.
+            As you add books, they go on top, and when you remove a book, you take the top one off.
         </p>
 
         <div class="visualizer">
@@ -47,8 +48,8 @@
 
         <div class="controls">
             <input type="number" id="stack-value" placeholder="Value" />
-            <button onclick="pushStack()">Push</button>
-            <button onclick="popStack()">Pop</button>
+            <button onclick="pushStack()">Add</button>
+            <button onclick="popStack()">Remove</button>
         </div>
     </section>
 
@@ -57,7 +58,8 @@
         <h2>Queue</h2>
         <p>
             A <strong>queue</strong> follows the FIFO principle (First In, First Out).  
-            The first item added is the first one removed.
+            The first item added is the first one removed. Think of it like a line of people waiting.
+            the first person in line is the first to be served. 
         </p>
 
         <div class="visualizer">
@@ -66,8 +68,8 @@
 
         <div class="controls">
             <input type="number" id="queue-value" placeholder="Value" />
-            <button onclick="enqueue()">Enqueue</button>
-            <button onclick="dequeue()">Dequeue</button>
+            <button onclick="enqueue()">Add</button>
+            <button onclick="dequeue()">Remove</button>
         </div>
     </section>
 
